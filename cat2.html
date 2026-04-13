@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>12th Pass Jobs — Naari Shakti</title>
+  <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap' rel='stylesheet'>
+<style>/* =============================================
+   NAARI SHAKTI — WOMEN CAREER PORTAL
+   Main Stylesheet
+   ============================================= */
+
+/* ── RESET & BASE ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #FDFAF5;
+  color: #1A1A2E;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ── COLOUR TOKENS ── */
+:root {
+  --rose:        #C8526A;
+  --rose-light:  #F5E6EA;
+  --rose-mid:    #E8A0B0;
+  --gold:        #B8860B;
+  --gold-light:  #FDF6E3;
+  --gold-mid:    #E8C97A;
+  --purple:      #6B4E9E;
+  --purple-light:#F0EBF8;
+  --purple-mid:  #C3AAE8;
+  --teal:        #2A7B6F;
+  --teal-light:  #E0F2EF;
+  --navy:        #1A2B4A;
+  --navy-mid:    #2E4470;
+  --cream:       #FDFAF5;
+  --warm-gray:   #F4F0EB;
+  --text:        #1A1A2E;
+  --text-mid:    #4A4A6A;
+  --text-soft:   #8A8AA8;
+  --border:      rgba(26,26,46,0.10);
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--warm-gray); }
+::-webkit-scrollbar-thumb { background: var(--rose-mid); border-radius: 3px; }
+
+/* ── UTILITY ── */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.section      { padding: 80px 0; }
+.section-alt  { background: var(--warm-gray); }
+.center       { text-align: center; }
+
+/* ── SECTION HEADER ── */
+.section-header       { margin-bottom: 48px; }
+.section-header.center .section-desc { margin: 0 auto; }
+.section-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3.5vw, 38px);
+  color: var(--navy);
+  line-height: 1.22;
+  margin-bottom: 14px;
+}
+.section-desc {
+  font-size: 16px;
+  color: var(--text-mid);
+  max-width: 580px;
+  line-height: 1.75;
+}
+
+/* ── COLOUR HELPERS ── */
+.rose-bg    { background: var(--rose-light); }
+.gold-bg    { background: var(--gold-light); }
+.purple-bg  { background: var(--purple-light); }
+.teal-bg    { background: var(--teal-light); }
+.rose-text  { color: var(--rose); }
+.gold-text  { color: var(--gold); }
+.purple-text{ color: var(--purple); }
+
+/* =============================================
+   HEADER
+   ============================================= */
+.site-header {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+}
+.header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--rose);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px; font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.brand-name {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.1;
+}
+.brand-tagline {
+  display: block;
+  font-size: 10px;
+  color: var(--rose-mid);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.main-nav a {
+  color: rgba(255,255,255,0.70);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 13px;
+  border-radius: 7px;
+  transition: all 0.2s;
+}
+.main-nav a:hover { background: rgba(255,255,255,0.09); color: #fff; }
+.btn-nav {
+  background: var(--rose) !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+  padding: 7px 20px !important;
+}
+.btn-nav:hover { background: #a83e55 !important; }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.hamburger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  background: var(--navy);
+  padding: 80px 24px 90px;
+  overflow: hidden;
+}
+.hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.hero-text { flex: 1; }
+.hero-badge {
+  display: inline-block;
+  background: rgba(200,82,106,0.18);
+  border: 1px solid rgba(200,82,106,0.38);
+  color: var(--rose-mid);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 54px);
+  color: #fff;
+  line-height: 1.18;
+  margin-bottom: 20px;
+}
+.hero-title .highlight { color: var(--rose-mid); font-style: italic; }
+.hero-desc {
+  font-size: 17px;
+  color: rgba(255,255,255,0.62);
+  max-width: 520px;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+.btn-primary {
+  background: var(--rose);
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+}
+.btn-primary:hover { background: #a83e55; transform: translateY(-2px); }
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1.5px solid rgba(255,255,255,0.32);
+  transition: all 0.2s;
+  display: inline-block;
+}
+.btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.07); }
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.stat strong { display: block; font-size: 26px; font-weight: 700; color: #fff; font-family: 'Playfair Display', serif; }
+.stat span   { font-size: 12px; color: rgba(255,255,255,0.48); letter-spacing: 0.05em; }
+.stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.15); }
+.hero-image-col { flex-shrink: 0; }
+.hero-card-float {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 300px;
+}
+.hcf-row { display: flex; align-items: center; gap: 12px; font-size: 14px; color: rgba(255,255,255,0.78); }
+.hcf-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.hcf-dot.green  { background: #4CAF50; }
+.hcf-dot.rose   { background: var(--rose); }
+.hcf-dot.gold   { background: var(--gold); }
+
+/* =============================================
+   TICKER
+   ============================================= */
+.ticker-wrap {
+  background: var(--rose);
+  overflow: hidden;
+  padding: 10px 0;
+}
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker 28s linear infinite;
+}
+.ticker-track span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 28px;
+  letter-spacing: 0.04em;
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* =============================================
+   CATEGORIES
+   ============================================= */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.cat-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 30px;
+  border: 1.5px solid var(--border);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+.cat-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(26,26,46,0.12); border-color: transparent; }
+.cat-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.cat-number { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; line-height: 1; color: var(--border); }
+.cat-rose .cat-number { color: rgba(200,82,106,0.18); }
+.cat-gold .cat-number { color: rgba(184,134,11,0.18); }
+.cat-purple .cat-number { color: rgba(107,78,158,0.18); }
+.cat-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+.cat-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.cat-desc-text { font-size: 14px; color: var(--text-mid); line-height: 1.75; margin-bottom: 20px; }
+.cat-salary-range {
+  background: var(--warm-gray);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.salary-label { font-size: 12px; color: var(--text-soft); font-weight: 500; }
+.salary-value { font-size: 14px; font-weight: 700; }
+.cat-job-list {
+  list-style: none;
+  margin-bottom: 24px;
+  flex: 1;
+}
+.cat-job-list li {
+  font-size: 13px;
+  color: var(--text-mid);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cat-job-list li::before { content: '→'; font-size: 12px; }
+.cat-rose  .cat-job-list li::before { color: var(--rose); }
+.cat-gold  .cat-job-list li::before { color: var(--gold); }
+.cat-purple .cat-job-list li::before { color: var(--purple); }
+.cat-btn {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+.rose-btn   { background: var(--rose); color: #fff; }
+.rose-btn:hover   { background: #a83e55; }
+.gold-btn   { background: var(--gold); color: #fff; }
+.gold-btn:hover   { background: #9a7009; }
+.purple-btn { background: var(--purple); color: #fff; }
+.purple-btn:hover { background: #553d80; }
+
+/* =============================================
+   CHART BOX
+   ============================================= */
+.chart-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px;
+  border: 1.5px solid var(--border);
+  margin-top: 40px;
+}
+.chart-tabs { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+.ctab {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text-mid);
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.ctab:hover { background: var(--warm-gray); }
+.ctab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+.chart-area { width: 100%; height: 320px; position: relative; }
+.chart-legend {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.leg-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-mid); }
+.leg-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+}
+
+/* =============================================
+   ROADMAP
+   ============================================= */
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+.step-item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  border: 1.5px solid var(--border);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.step-item:hover { box-shadow: 0 8px 30px rgba(26,26,46,0.08); border-color: var(--rose-mid); }
+.step-num {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: var(--rose);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.step-title { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+.step-text  { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+
+/* =============================================
+   STORIES
+   ============================================= */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.story-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  border: 1.5px solid var(--border);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.story-avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+.story-quote {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.story-name   { font-size: 14px; font-weight: 600; color: var(--navy); }
+.story-detail { font-size: 12px; color: var(--text-soft); margin-top: 3px; }
+
+/* =============================================
+   RESOURCES
+   ============================================= */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 40px;
+}
+.resource-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1.5px solid var(--border);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.2s;
+}
+.resource-card:hover { box-shadow: 0 8px 30px rgba(26,26,46,0.08); border-color: var(--teal-mid); transform: translateY(-3px); }
+.resource-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.resource-info h4 { font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+.resource-info p  { font-size: 12px; color: var(--text-mid); line-height: 1.6; margin-bottom: 10px; }
+.resource-link    { font-size: 12px; font-weight: 700; color: var(--teal); }
+
+/* =============================================
+   INSPIRATION / QUOTES
+   ============================================= */
+.quotes-box { max-width: 720px; margin: 0 auto; }
+.quotes-track { position: relative; min-height: 130px; }
+.quote-slide {
+  display: none;
+  text-align: center;
+  animation: fadeQ 0.5s ease;
+}
+.quote-slide.active { display: block; }
+@keyframes fadeQ { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+.quote-slide blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: var(--navy);
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.quote-slide cite { font-size: 13px; color: var(--text-soft); font-style: normal; font-weight: 600; letter-spacing: 0.06em; }
+.quote-controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.q-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--rose-mid);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s;
+}
+.q-dot.active { background: var(--rose); width: 22px; border-radius: 4px; }
+
+/* =============================================
+   HELPLINE BAND
+   ============================================= */
+.helpline-band { background: var(--navy); padding: 48px 24px; }
+.helpline-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.helpline-title { font-family: 'Playfair Display', serif; font-size: 26px; color: #fff; margin-bottom: 8px; }
+.helpline-text  { font-size: 15px; color: rgba(255,255,255,0.60); max-width: 480px; line-height: 1.65; }
+.helpline-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.helpline-btn {
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--rose);
+  color: #fff;
+  border: 1.5px solid var(--rose);
+  transition: all 0.2s;
+  display: inline-block;
+}
+.helpline-btn:hover { background: #a83e55; }
+.helpline-btn.outline { background: transparent; color: #fff; border-color: rgba(255,255,255,0.35); }
+.helpline-btn.outline:hover { background: rgba(255,255,255,0.08); border-color: #fff; }
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.site-footer { background: var(--navy); padding-top: 60px; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+.footer-brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-brand-desc  { font-size: 13px; color: rgba(255,255,255,0.50); line-height: 1.7; margin-bottom: 12px; max-width: 270px; }
+.footer-project-note { font-size: 11px; color: rgba(255,255,255,0.28); font-style: italic; }
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.footer-col a {
+  display: block;
+  font-size: 13px;
+  color: rgba(255,255,255,0.52);
+  margin-bottom: 9px;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--rose-mid); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.09); padding: 20px 0; }
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.30);
+}
+
+/* =============================================
+   TOAST
+   ============================================= */
+.toast {
+  position: fixed;
+  bottom: 110px;
+  right: 28px;
+  background: var(--navy);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s;
+  pointer-events: none;
+  max-width: 280px;
+}
+.toast.show { opacity: 1; transform: translateY(0); }
+
+/* =============================================
+   INNER PAGE SHARED STYLES
+   ============================================= */
+.page-hero {
+  padding: 56px 24px 48px;
+  text-align: center;
+}
+.page-hero.rose-bg   { background: var(--rose-light); }
+.page-hero.gold-bg   { background: var(--gold-light); }
+.page-hero.purple-bg { background: var(--purple-light); }
+.page-hero.navy-bg   { background: var(--navy); }
+.page-hero .page-hero-label  { font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 10px; }
+.page-hero .page-hero-title  { font-family: 'Playfair Display', serif; font-size: clamp(26px,4vw,42px); line-height: 1.2; margin-bottom: 14px; }
+.page-hero .page-hero-desc   { font-size: 16px; max-width: 560px; margin: 0 auto; line-height: 1.75; }
+.navy-bg .page-hero-label { color: var(--rose-mid); }
+.navy-bg .page-hero-title { color: #fff; }
+.navy-bg .page-hero-desc  { color: rgba(255,255,255,0.60); }
+
+/* Jobs list on inner pages */
+.jobs-section { padding: 60px 24px; max-width: 960px; margin: 0 auto; }
+.jobs-header { margin-bottom: 32px; }
+.jobs-header h2 { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--navy); margin-bottom: 8px; }
+.jobs-header p  { font-size: 14px; color: var(--text-mid); }
+
+.job-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1.5px solid var(--border);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: all 0.2s;
+}
+.job-card:hover { border-color: var(--rose-mid); box-shadow: 0 8px 30px rgba(26,26,46,0.07); }
+.job-card-left  { display: flex; gap: 16px; align-items: flex-start; flex: 1; min-width: 200px; }
+.job-logo-box {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.job-card-title { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+.job-card-co    { font-size: 13px; color: var(--text-mid); margin-bottom: 8px; }
+.job-tags-row   { display: flex; flex-wrap: wrap; gap: 5px; }
+.jtag {
+  font-size: 11px; font-weight: 600;
+  padding: 3px 9px; border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+.jt-teal   { background: var(--teal-light); color: #1A5C52; }
+.jt-rose   { background: var(--rose-light); color: #8B2A3E; }
+.jt-purple { background: var(--purple-light); color: #4A2E7A; }
+.jt-gold   { background: var(--gold-light); color: #7A5900; }
+.jt-navy   { background: #E8EBF5; color: var(--navy-mid); }
+.job-card-right { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.job-salary { font-size: 15px; font-weight: 700; color: var(--teal); }
+.apply-now-btn {
+  background: var(--navy);
+  color: #fff;
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: inline-block;
+}
+.apply-now-btn::after { content: ' ↗'; }
+.apply-now-btn:hover { background: var(--rose); transform: translateY(-1px); }
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #1A5C52;
+  background: var(--teal-light);
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.verified-badge::before { content: '✓'; font-size: 11px; }
+
+/* Tip box inside inner pages */
+.tip-box {
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-top: 28px;
+  margin-bottom: 40px;
+}
+.tip-box.rose   { background: var(--rose-light); border: 1px solid var(--rose-mid); }
+.tip-box.gold   { background: var(--gold-light); border: 1px solid var(--gold-mid); }
+.tip-box.purple { background: var(--purple-light); border: 1px solid var(--purple-mid); }
+.tip-box h4     { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+.tip-box.rose h4   { color: var(--rose); }
+.tip-box.gold h4   { color: var(--gold); }
+.tip-box.purple h4 { color: var(--purple); }
+.tip-box p         { font-size: 13px; line-height: 1.7; }
+.tip-box.rose   p  { color: #5A1E2E; }
+.tip-box.gold   p  { color: #5A3A00; }
+.tip-box.purple p  { color: #2E1C5A; }
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 1024px) {
+  .cat-grid    { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  .steps-row   { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .resource-grid  { grid-template-columns: 1fr 1fr; }
+  .stories-grid   { grid-template-columns: 1fr; max-width: 540px; margin: 0 auto; }
+}
+@media (max-width: 768px) {
+  .main-nav    { display: none; }
+  .main-nav.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 64px; left: 0; right: 0;
+    background: var(--navy);
+    padding: 16px 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    z-index: 199;
+    gap: 4px;
+  }
+  .hamburger { display: flex; }
+  header     { position: relative; }
+  .hero-inner       { flex-direction: column; gap: 36px; }
+  .hero-image-col   { width: 100%; }
+  .hero-card-float  { min-width: 0; width: 100%; }
+  .steps-row        { grid-template-columns: 1fr; }
+  .resource-grid    { grid-template-columns: 1fr; }
+  .footer-grid      { grid-template-columns: 1fr 1fr; }
+  .helpline-inner   { flex-direction: column; }
+  .section { padding: 52px 0; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-stats  { gap: 18px; }
+  .stat-divider { display: none; }
+}
+
+/* =============================================
+   NAARI SHAKTI — CHATBOT STYLES
+   ============================================= */
+
+.chat-fab {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 500;
+}
+
+/* Toggle button */
+.chat-toggle-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--rose);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 6px 24px rgba(200,82,106,0.45);
+  transition: all 0.25s;
+}
+.chat-toggle-btn:hover {
+  transform: scale(1.08);
+  background: #a83e55;
+}
+
+/* Chat window */
+.chat-window {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 350px;
+  max-width: 92vw;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  border: 1.5px solid var(--border);
+  overflow: hidden;
+  animation: chatSlide 0.25s ease;
+}
+.chat-window.open {
+  display: flex;
+}
+@keyframes chatSlide {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.chat-head {
+  background: var(--navy);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.chat-avatar-head {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  font-family: 'Playfair Display', serif;
+}
+.chat-head-name   { font-size: 14px; font-weight: 600; color: #fff; }
+.chat-head-status { font-size: 11px; color: rgba(255,255,255,0.50); }
+.chat-x {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.55);
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: color 0.2s;
+}
+.chat-x:hover { color: #fff; }
+
+/* Messages */
+.chat-messages {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 320px;
+  min-height: 180px;
+  overflow-y: auto;
+}
+.chat-msg {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+.chat-msg.user { flex-direction: row-reverse; }
+.chat-bubble {
+  max-width: 84%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.chat-msg.bot  .chat-bubble { background: #F4F0EB; color: var(--text); border-bottom-left-radius: 4px; }
+.chat-msg.user .chat-bubble { background: var(--rose); color: #fff; border-bottom-right-radius: 4px; }
+.chat-msg.bot  .chat-bubble a { color: var(--teal); font-weight: 600; }
+.chat-bubble strong { font-weight: 700; }
+
+/* Action button inside chat */
+.chat-action-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--rose);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s;
+}
+.chat-action-btn:hover { background: #a83e55; }
+
+/* Typing dots */
+.typing-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 6px 0;
+}
+.typing-dots span {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--rose-mid);
+  animation: typeBounce 1.2s infinite;
+}
+.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typeBounce {
+  0%,60%,100% { transform: translateY(0); }
+  30%          { transform: translateY(-6px); }
+}
+
+/* Quick reply buttons */
+.chat-quick {
+  padding: 8px 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chat-quick button {
+  font-size: 11px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  border: 1.5px solid var(--rose-mid);
+  background: var(--rose-light);
+  color: var(--rose);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+.chat-quick button:hover {
+  background: var(--rose);
+  color: #fff;
+  border-color: var(--rose);
+}
+
+/* Input row */
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+}
+.chat-input {
+  flex: 1;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  padding: 9px 13px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background: #F4F0EB;
+  outline: none;
+  transition: border 0.2s;
+}
+.chat-input:focus {
+  border-color: var(--rose-mid);
+  background: #fff;
+}
+.chat-send-btn {
+  background: var(--rose);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 0 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+.chat-send-btn:hover { background: #a83e55; }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">N</div>
+        <div>
+          <span class="brand-name">Naari Shakti</span>
+          <span class="brand-tagline">Women Career Portal</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#categories">All Categories</a>
+        <a href="cat1.html">10th Pass</a>
+        <a href="cat3.html">Degree Holder</a>
+        <a href="index.html#resources">Free Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html" class="btn-nav">Back to Home</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="page-hero gold-bg">
+    <div style="max-width:700px;margin:0 auto;padding:0 24px;">
+      <span class="page-hero-label" style="color:var(--gold);">Category 2</span>
+      <h1 class="page-hero-title" style="color:var(--navy);">📖 Jobs for 12th Pass Women</h1>
+      <p class="page-hero-desc" style="color:var(--text-mid);">
+        Whether you passed 12th or could not finish it — you qualify for BPO jobs, government
+        schemes, and many remote roles that pay ₹15,000 to ₹60,000 per month.
+        Every Apply button below takes you directly to the official employer page.
+      </p>
+    </div>
+  </div>
+
+  <div class="jobs-section">
+
+    <div class="jobs-header">
+      <h2>Verified Jobs — Apply Directly</h2>
+      <p>All listings are from trusted employers. No registration fee. No middleman.</p>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-left">
+        <div class="job-logo-box" style="background:#FDF6E3;">🎧</div>
+        <div>
+          <div class="job-card-title">BPO / Customer Service Executive — Remote</div>
+          <div class="job-card-co">Concentrix India · 100% Work from Home</div>
+          <div class="job-tags-row">
+            <span class="jtag jt-teal">12th Pass</span>
+            <span class="jtag jt-rose">Remote</span>
+            <span class="jtag jt-gold">Training given</span>
+            <span class="jtag jt-navy">Night shift available</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-mid);margin-top:10px;line-height:1.6;">
+            Handle customer queries via phone, chat, or email for banks and companies.
+            Concentrix provides full training before you start and a laptop if needed.
+            Multiple shift options so you can work around your family schedule.
+          </p>
+        </div>
+      </div>
+      <div class="job-card-right">
+        <div class="job-salary">₹15,000 – ₹28,000 / mo</div>
+        <span class="verified-badge">Verified</span>
+        <a class="apply-now-btn" href="https://jobs.concentrix.com/in/en" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-left">
+        <div class="job-logo-box" style="background:#E0F2EF;">🏦</div>
+        <div>
+          <div class="job-card-title">Bank Correspondent Agent — Govt. Scheme</div>
+          <div class="job-card-co">PM Jan Dhan Yojana · Work in Your Neighbourhood</div>
+          <div class="job-tags-row">
+            <span class="jtag jt-teal">12th Pass</span>
+            <span class="jtag jt-purple">Govt. scheme</span>
+            <span class="jtag jt-gold">Earn per transaction</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-mid);margin-top:10px;line-height:1.6;">
+            Become a Banking Correspondent and help people in your area open accounts,
+            transfer money, and access government benefits. You earn a commission on every
+            transaction. No office needed — you work from your home or nearby shop.
+          </p>
+        </div>
+      </div>
+      <div class="job-card-right">
+        <div class="job-salary">₹12,000 – ₹35,000 / mo</div>
+        <span class="verified-badge">Verified</span>
+        <a class="apply-now-btn" href="https://www.pmjdy.gov.in/" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-left">
+        <div class="job-logo-box" style="background:#FBEAF0;">💄</div>
+        <div>
+          <div class="job-card-title">Beauty Therapist / Salon Manager</div>
+          <div class="job-card-co">VLCC / Lakme Academy · 6-Week Certified Course</div>
+          <div class="job-tags-row">
+            <span class="jtag jt-rose">6-week course</span>
+            <span class="jtag jt-teal">12th Pass OK</span>
+            <span class="jtag jt-gold">High demand</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-mid);margin-top:10px;line-height:1.6;">
+            Complete VLCC's 6-week beauty therapy course and get placed in a salon immediately.
+            You can also run your own beauty service from home and earn per client.
+            The beauty industry in India is growing fast and always needs trained professionals.
+          </p>
+        </div>
+      </div>
+      <div class="job-card-right">
+        <div class="job-salary">₹18,000 – ₹50,000 / mo</div>
+        <span class="verified-badge">Verified</span>
+        <a class="apply-now-btn" href="https://www.vlcc.in/franchise-enquiry" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-left">
+        <div class="job-logo-box" style="background:#FDF6E3;">📊</div>
+        <div>
+          <div class="job-card-title">Accounts Assistant — Tally &amp; Excel</div>
+          <div class="job-card-co">Small &amp; Medium Companies Across India · Remote / Office</div>
+          <div class="job-tags-row">
+            <span class="jtag jt-teal">Commerce 12th</span>
+            <span class="jtag jt-rose">Tally ERP helpful</span>
+            <span class="jtag jt-gold">Part-time OK</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-mid);margin-top:10px;line-height:1.6;">
+            Handle billing, invoices, and basic bookkeeping for small businesses. If you studied
+            commerce in 12th, you already know the basics. A free Tally course (available on Internshala)
+            takes 2 weeks and can get you this job immediately.
+          </p>
+        </div>
+      </div>
+      <div class="job-card-right">
+        <div class="job-salary">₹14,000 – ₹32,000 / mo</div>
+        <span class="verified-badge">Verified</span>
+        <a class="apply-now-btn" href="https://www.naukri.com/accounts-assistant-jobs" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-left">
+        <div class="job-logo-box" style="background:#E0F2EF;">🏫</div>
+        <div>
+          <div class="job-card-title">Anganwadi Worker / School Assistant — Govt.</div>
+          <div class="job-card-co">Ministry of Women &amp; Child Development · Near Your Area</div>
+          <div class="job-tags-row">
+            <span class="jtag jt-purple">Govt. job</span>
+            <span class="jtag jt-teal">Child-friendly hours</span>
+            <span class="jtag jt-gold">Pension benefits</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-mid);margin-top:10px;line-height:1.6;">
+            Anganwadi workers are employed by the government to care for young children and mothers
+            in their community. The hours are fixed and family-friendly (morning only).
+            Government job security with pension. Apply through your state government portal.
+          </p>
+        </div>
+      </div>
+      <div class="job-card-right">
+        <div class="job-salary">₹10,000 – ₹20,000 / mo</div>
+        <span class="verified-badge">Verified</span>
+        <a class="apply-now-btn" href="https://wcd.nic.in/schemes/anganwadi-services" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-left">
+        <div class="job-logo-box" style="background:#F0EBF8;">🏥</div>
+        <div>
+          <div class="job-card-title">Medical Transcriptionist — Remote</div>
+          <div class="job-card-co">Various Hospitals / Outsourcing Firms · Work from Home</div>
+          <div class="job-tags-row">
+            <span class="jtag jt-teal">12th Pass + Course</span>
+            <span class="jtag jt-rose">Work from home</span>
+            <span class="jtag jt-gold">4-week training</span>
+          </div>
+          <p style="font-size:13px;color:var(--text-mid);margin-top:10px;line-height:1.6;">
+            Listen to doctor recordings and type them into medical records. Requires a 4-week
+            course available online for under ₹2,000. After that, you can work fully from home
+            for hospitals and transcription companies. Good English typing is helpful.
+          </p>
+        </div>
+      </div>
+      <div class="job-card-right">
+        <div class="job-salary">₹15,000 – ₹35,000 / mo</div>
+        <span class="verified-badge">Verified</span>
+        <a class="apply-now-btn" href="https://internshala.com/jobs/work-from-home/medical-transcription-jobs" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="tip-box gold">
+      <h4>Free course recommended for you</h4>
+      <p>
+        Complete the <strong>NSDC Digital Marketing + Tally ERP Bundle</strong> (free, 4 weeks).
+        These two skills alone can get you a remote job paying ₹25,000–40,000 per month.
+        <a href="https://www.skillindiadigital.gov.in/" target="_blank" rel="noopener" style="color:var(--gold);font-weight:700;margin-left:4px;">Start free →</a>
+      </p>
+    </div>
+
+    <div style="text-align:center;margin-top:16px;">
+      <a href="index.html#categories" style="font-size:14px;color:var(--text-soft);">← Back to all categories</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <div class="footer-brand-name">Naari Shakti</div>
+        <p class="footer-brand-desc">India's career portal for women. Real jobs. No fees. No middlemen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="cat1.html">10th Pass Jobs</a>
+        <a href="cat2.html">12th Pass Jobs</a>
+        <a href="cat3.html">Degree Holder Jobs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Free Resources</h4>
+        <a href="https://www.skillindiadigital.gov.in/" target="_blank">Skill India</a>
+        <a href="https://www.pmkvyofficial.org/" target="_blank">PMKVY Scheme</a>
+        <a href="https://internshala.com" target="_blank">Internshala</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="resume-tips.html">Resume Tips</a>
+        <a href="tel:18001234567">1800-123-4567</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 Naari Shakti. All rights reserved.</span>
+        <span>BCA Final Year Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-fab">
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-head">
+        <div class="chat-avatar-head">NS</div>
+        <div>
+          <div class="chat-head-name">Career Guide</div>
+          <div class="chat-head-status">Online · Ask us anything</div>
+        </div>
+        <button class="chat-x" onclick="closeChat()">✕</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">
+          <div class="chat-bubble">You are viewing 12th Pass jobs. Ask me about any role, free training, or how to write your resume. I am here.</div>
+        </div>
+      </div>
+      <div class="chat-quick" id="chatQuick">
+        <button onclick="quickAsk('Which 12th pass job pays the most?')">Highest paying?</button>
+        <button onclick="quickAsk('What free course for 12th pass?')">Free courses</button>
+        <button onclick="quickAsk('How to handle career gap in interview?')">Career gap help</button>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" class="chat-input" placeholder="Type your question…" onkeydown="if(event.key==='Enter') sendChat()" />
+        <button class="chat-send-btn" onclick="sendChat()">Send</button>
+      </div>
+    </div>
+    <button class="chat-toggle-btn" onclick="toggleChat()"><span>💬</span></button>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script>/* =============================================
+   NAARI SHAKTI — NAVIGATION
+   ============================================= */
+
+function toggleNav() {
+  const nav = document.getElementById('mainNav');
+  const ham = document.getElementById('hamburger');
+  if (nav) {
+    nav.classList.toggle('open');
+    ham.classList.toggle('open');
+  }
+}
+
+/* Close nav when a link is clicked on mobile */
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('.main-nav a');
+  links.forEach(function (link) {
+    link.addEventListener('click', function () {
+      const nav = document.getElementById('mainNav');
+      if (nav && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+      }
+    });
+  });
+});
+</script>
+<script>/* =============================================
+   NAARI SHAKTI — CAREER GUIDE CHATBOT
+   Rule-based guidance. No external API.
+   ============================================= */
+
+var chatIsOpen = false;
+
+/* ── RESPONSE LIBRARY ── */
+var responses = [
+  {
+    keywords: ['10th', 'tenth', '10 pass', 'matric', 'starting', 'basic'],
+    text: 'For 10th pass women, here are the best jobs available right now:\n\n• <strong>Data Entry Operator</strong> — ₹10,000–18,000/month (remote)\n• <strong>Tele-calling Executive</strong> — ₹12,000–22,000/month (work from home)\n• <strong>Home Cook / Cloud Kitchen</strong> — ₹10,000–40,000/month\n• <strong>Stitching / Tailoring</strong> — ₹8,000–25,000/month\n• <strong>Kirana Retail Helper</strong> — ₹12,000–20,000/month\n\nClick the button below to see all jobs with direct apply links.',
+    action: { label: 'Open 10th Pass Jobs', href: 'pages/cat1.html' }
+  },
+  {
+    keywords: ['12th', 'twelve', '12 pass', 'intermediate', 'bpo', 'customer service'],
+    text: 'For 12th pass women, you have excellent options:\n\n• <strong>BPO / Customer Service</strong> — ₹15,000–28,000/month (remote)\n• <strong>Bank Correspondent</strong> — ₹12,000–35,000/month (govt. scheme)\n• <strong>Beauty Therapist</strong> — ₹18,000–50,000/month (6-week course)\n• <strong>Accounts Assistant</strong> — ₹14,000–32,000/month\n• <strong>Anganwadi / Govt. Jobs</strong> — ₹10,000–20,000/month\n\nClick below to see all jobs with direct apply links.',
+    action: { label: 'Open 12th Pass Jobs', href: 'pages/cat2.html' }
+  },
+  {
+    keywords: ['degree', 'graduate', 'graduated', 'long gap', 'career gap', 'years ago', 'bca', 'bsc', 'ba ', 'bcom', 'mba', 'mca', 'b.tech', 'engineering', 'long break', 'years back'],
+    text: 'You have a degree and a career gap — you are exactly who Wipro, Accenture, and Nykaa are looking for through their Return to Work programmes.\n\n• <strong>Software Developer (Wipro)</strong> — ₹80,000–2,20,000/month\n• <strong>Business Analyst (Accenture)</strong> — ₹80,000–1,80,000/month\n• <strong>Virtual CA Practice</strong> — ₹50,000–5,00,000+/month\n• <strong>Online Teaching (Vedantu)</strong> — ₹40,000–1,20,000/month\n• <strong>Digital Marketing (Nykaa)</strong> — ₹70,000–2,00,000/month\n\nAll of these are 100% remote. No office required.',
+    action: { label: 'Open Degree Holder Jobs', href: 'pages/cat3.html' }
+  },
+  {
+    keywords: ['course', 'learn', 'skill', 'certif', 'training', 'free course', 'study'],
+    text: 'Here are the best <strong>free</strong> courses for you:\n\n• <strong>Skill India Digital</strong> — IT, Retail, Healthcare (Govt. free)\n• <strong>PMKVY Scheme</strong> — Free training with monthly stipend\n• <strong>Google Career Certificates</strong> — 6 months, widely accepted\n• <strong>Coursera Free Courses</strong> — From IBM, Meta, Google\n• <strong>Internshala</strong> — 50+ certified courses, many free\n\nWhich field are you interested in?',
+    action: { label: 'See All Free Resources', href: 'index.html#resources' }
+  },
+  {
+    keywords: ['remote', 'home', 'wfh', 'work from home', 'from home', 'online job'],
+    text: 'Every job on Naari Shakti has a remote or work-from-home option:\n\n• <strong>10th Pass</strong> — Data entry, tele-calling, home cooking\n• <strong>12th Pass</strong> — BPO, online accounts, bank work from home\n• <strong>Degree Holder</strong> — IT, finance, teaching, HR — all remote\n\nYou never have to leave your family or city.',
+    action: { label: 'Browse Remote Jobs', href: 'index.html#categories' }
+  },
+  {
+    keywords: ['resume', 'cv', 'career gap', 'gap explain', 'explain gap', 'how to explain'],
+    text: 'Here is how to handle your career gap on a resume honestly and positively:\n\n1. Title the gap period: <strong>"Family Management & Career Break"</strong>\n2. List real skills you used — budgeting, planning, child education, managing household accounts\n3. Mention any volunteer work or small income work done at home\n4. Keep your most recent degree at the top\n5. Focus on what you can do <em>now</em>, not years lost\n\nEmployers running returnship programmes specifically expect and accept career gaps. It is not a problem.',
+    action: { label: 'Read Full Resume Tips', href: 'pages/resume-tips.html' }
+  },
+  {
+    keywords: ['interview', 'prepare', 'question', 'answer', 'nervous', 'scared'],
+    text: 'Interview tips for women returning after a break:\n\n• <strong>Be honest about the gap</strong> — say "I managed my family during this time"\n• <strong>Talk about skills gained</strong> — patience, multitasking, budget management\n• <strong>Show your eagerness</strong> — mention any course you took recently\n• <strong>Ask about flexible hours</strong> — good companies will respect this request\n• <strong>Practise out loud</strong> — say your answers to a mirror once each day\n\nYou have more to offer than you think.',
+    action: { label: 'Full Interview Guide', href: 'pages/interview-tips.html' }
+  },
+  {
+    keywords: ['salary', 'earn', 'pay', 'money', 'income', 'how much', 'lakh'],
+    text: 'Here are the salary ranges by category:\n\n• <strong>10th Pass</strong> — ₹8,000 to ₹35,000 per month\n• <strong>12th Pass</strong> — ₹12,000 to ₹60,000 per month\n• <strong>Degree Holder</strong> — ₹40,000 to ₹5,00,000+ per month\n\nWith even one free certification course, you can move to the next salary band within 3 to 6 months.',
+    action: { label: 'See Salary Chart', href: 'index.html#chart-section' }
+  },
+  {
+    keywords: ['hopeless', 'help', 'dont know', "don't know", 'no idea', 'confused', 'lost', 'sad', 'struggling', 'difficult', 'hard', 'worried', 'scared', 'afraid', 'nervous'],
+    text: 'I understand how you feel. Many women on this portal felt the same way before they found their first job.\n\nYou are <strong>not too old</strong>. You are <strong>not unqualified</strong>. You have years of experience managing life, which employers genuinely value.\n\nTell me one thing — what level of education do you have? I will guide you to the right jobs step by step.',
+    action: null
+  },
+  {
+    keywords: ['govt', 'government', 'sarkari', 'scheme', 'pmkvy', 'skill india'],
+    text: 'Government schemes available specifically for women:\n\n• <strong>PMKVY</strong> — Free skill training with stipend. Works for all education levels.\n• <strong>Skill India Digital</strong> — Free online courses with certificate.\n• <strong>Anganwadi Jobs</strong> — Govt. jobs for 10th and 12th pass near your area.\n• <strong>PM Jan Dhan / Bank Correspondent</strong> — Earn per transaction, work from your neighbourhood.\n• <strong>Mahila Samridhi Yojana</strong> — Small business support for women.\n\nAll of these are free to apply.',
+    action: { label: 'PMKVY Official Site', href: 'https://www.pmkvyofficial.org/', external: true }
+  },
+  {
+    keywords: ['contact', 'helpline', 'call', 'speak', 'counsellor', 'help me'],
+    text: 'Our counsellors speak Hindi, Kannada, Tamil, Telugu, Bengali, and Marathi.\n\n📞 <strong>Helpline: 1800-123-4567</strong> (Free call)\n\nYou can also send us a message through the contact page and we will reply within 24 hours.',
+    action: { label: 'Contact Us', href: 'pages/contact.html' }
+  }
+];
+
+var defaultResponse = {
+  text: 'I am here to help you find the right job and career path. You can ask me:\n\n• Jobs for 10th pass, 12th pass, or degree holders\n• Free government courses and certifications\n• Remote and work-from-home options\n• How to write your resume after a career gap\n• Interview preparation tips\n• Salary information\n• Government schemes for women\n\nWhat would you like to know?',
+  action: null
+};
+
+/* ── FIND RESPONSE ── */
+function findResponse(msg) {
+  var lower = msg.toLowerCase();
+  for (var i = 0; i < responses.length; i++) {
+    var r = responses[i];
+    for (var j = 0; j < r.keywords.length; j++) {
+      if (lower.indexOf(r.keywords[j]) !== -1) {
+        return r;
+      }
+    }
+  }
+  return defaultResponse;
+}
+
+/* ── DOM HELPERS ── */
+function appendMessage(html, isUser) {
+  var box  = document.getElementById('chatMessages');
+  var div  = document.createElement('div');
+  div.className = 'chat-msg ' + (isUser ? 'user' : 'bot');
+  var bub  = document.createElement('div');
+  bub.className = 'chat-bubble';
+  if (isUser) {
+    bub.textContent = html;
+  } else {
+    bub.innerHTML = html.replace(/\n/g, '<br>');
+  }
+  div.appendChild(bub);
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function appendActionButton(resp) {
+  if (!resp.action) return;
+  var box = document.getElementById('chatMessages');
+  var div = document.createElement('div');
+  div.className = 'chat-msg bot';
+  var bub = document.createElement('div');
+  bub.className = 'chat-bubble';
+  var btn = document.createElement('a');
+  btn.className = 'chat-action-btn';
+  btn.textContent = resp.action.label + ' →';
+  btn.href = resp.action.href;
+  if (resp.action.external) { btn.target = '_blank'; btn.rel = 'noopener'; }
+  bub.appendChild(btn);
+  div.appendChild(bub);
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function showTyping() {
+  var box = document.getElementById('chatMessages');
+  var div = document.createElement('div');
+  div.className = 'chat-msg bot';
+  div.id = 'typingMsg';
+  var bub = document.createElement('div');
+  bub.className = 'chat-bubble';
+  bub.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
+  div.appendChild(bub);
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function removeTyping() {
+  var t = document.getElementById('typingMsg');
+  if (t) t.remove();
+}
+
+/* ── SEND ── */
+function sendChat() {
+  var input = document.getElementById('chatInput');
+  var txt   = input ? input.value.trim() : '';
+  if (!txt) return;
+  appendMessage(txt, true);
+  input.value = '';
+  /* Hide quick buttons after first message */
+  var qb = document.getElementById('chatQuick');
+  if (qb) qb.style.display = 'none';
+  showTyping();
+  var resp = findResponse(txt);
+  setTimeout(function () {
+    removeTyping();
+    appendMessage(resp.text, false);
+    appendActionButton(resp);
+  }, 800 + Math.random() * 500);
+}
+
+function quickAsk(text) {
+  var input = document.getElementById('chatInput');
+  if (input) input.value = text;
+  sendChat();
+}
+
+/* ── OPEN / CLOSE ── */
+function toggleChat() {
+  chatIsOpen ? closeChat() : openChat();
+}
+function openChat() {
+  chatIsOpen = true;
+  var w = document.getElementById('chatWindow');
+  if (w) w.classList.add('open');
+}
+function closeChat() {
+  chatIsOpen = false;
+  var w = document.getElementById('chatWindow');
+  if (w) w.classList.remove('open');
+}
+
+/* ── TOAST ── */
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(function () { t.classList.remove('show'); }, 3500);
+}
+
+/* ── ESCAPE key closes chat ── */
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && chatIsOpen) closeChat();
+});
+</script>
+</body>
+</html>

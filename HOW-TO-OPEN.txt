@@ -1,0 +1,63 @@
+===================================================
+  NAARI SHAKTI — HOW TO OPEN IN VS CODE
+  BCA Final Year Project
+===================================================
+
+STEP 1 — PUT ALL FILES IN ONE FOLDER
+--------------------------------------
+Create a new folder on your computer, for example:
+  C:\Users\Admin\Documents\naari-shakti\
+
+Copy ALL these 7 files into that ONE folder:
+  index.html
+  cat1.html
+  cat2.html
+  cat3.html
+  contact.html
+  resume-tips.html
+  interview-tips.html
+
+DO NOT put them in subfolders. All 7 files must be
+together in the same folder.
+
+
+STEP 2 — OPEN THAT FOLDER IN VS CODE
+--------------------------------------
+1. Open VS Code
+2. Click: File → Open Folder
+3. Select the "naari-shakti" folder you just made
+4. Click "Select Folder"
+
+
+STEP 3 — INSTALL LIVE SERVER (if not done)
+-------------------------------------------
+1. Press: Ctrl + Shift + X
+2. Search: Live Server
+3. Install the one by "Ritwick Dey"
+4. Wait for install to finish
+
+
+STEP 4 — RUN THE WEBSITE
+--------------------------
+1. In VS Code, click on "index.html" in the left panel
+2. Right-click anywhere in the file
+3. Click: "Open with Live Server"
+4. Your browser opens at: http://127.0.0.1:5500/index.html
+5. All pages will work correctly
+
+
+COMMON MISTAKE TO AVOID
+--------------------------
+Do NOT open Live Server from inside a subfolder.
+Do NOT have index.html in one folder and cat1.html
+in a different folder. They must ALL be together.
+
+
+IF LINKS STILL DON'T WORK
+--------------------------
+Open the files directly in your browser:
+1. Double-click index.html
+2. All links will open correctly
+Note: Chart.js needs internet to load the charts.
+
+===================================================
